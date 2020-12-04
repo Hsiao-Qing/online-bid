@@ -1,0 +1,518 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "微軟正黑體";
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.padding-0 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.margin-0 {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+header {
+    position: relative;
+    height: 80px;
+    z-index: 200;
+    display: flex;
+    background-color: #C8B394;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 5px 0;
+}
+
+header img {
+    max-width: 700px;
+}
+
+.burger {
+    display: none;
+}
+
+/* ---------- 選單開始 ---------- */
+.row .menu {
+    background-color: #DFD2BE;
+}
+
+.row .nav {
+    color: #5D4833;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.row .nav a {
+    color: #5D4833;
+}
+
+.row .nav-pills .nav-link.active, .nav-pills .show>.nav-linkP {
+    background-color: #5D4833;
+    padding: 1rem;
+}
+
+.row .nav-pills .nav-link {
+    margin: 1rem 0;
+    border-radius: unset;
+}
+
+
+/* ---------- 內容開始 ---------- */
+.row .main {
+    min-height: calc(100vh - 80px);
+}
+
+
+/* ---------- 服務說明&常見問題 ---------- */
+.row .tab-content {
+    background-color: #ffffff;
+}
+
+.row .tab-content .container-custom4 {
+    padding: 2rem 10rem;
+    color: #392C1F;
+}
+
+.row .tab-content .img-responsive {
+    padding: 5rem 8rem 0rem 8rem;
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    width: auto;
+    /* position: absolute; */
+    bottom: 30px;
+    right: 30px;
+    text-align: right;
+    color: #5D4833;
+    padding: 35px 5%;
+    float: right;
+    clear: both;
+}
+
+
+/* ---------- 線上申辦&查詢進度 ---------- */
+.main .form-control {
+    border: #392C1F 1px solid;
+}
+
+.main .rect {
+    width: 35px;
+    height: 24px;
+    background-color: #392C1F;
+    display: inline;
+    margin-right: 10px;
+}
+
+.main .rect1 {
+    width: 18px;
+    height: 30px;
+    background-color: #392C1F;
+    display: inline;
+    margin-right: 10px;
+}
+
+.btn1 {
+    color: #392C1F;
+    background-color: #ffffff;
+    border: #392C1F 1px solid;
+}
+
+.btn1:hover {
+    background-color: #392C1F;
+    color: #ffffff;
+    border: #392C1F 1px solid;
+    transition: 500ms;
+}
+
+.btn2 {
+    width: 80px;
+    height: 31px;
+    background-color: #392C1F;
+    color: #ffffff;
+    padding: 0;
+}
+
+.btn2:hover {
+    width: 80px;
+    height: 31px;
+    background-color: #9B8668;
+    color: #ffffff;
+    border: #9B8668 1px solid;
+    transition: 500ms;
+    padding: 0;
+}
+
+.container-custom1 {
+    max-width: 660px;
+    color: #392C1F;
+    margin: auto;
+}
+
+.container-custom2 {
+    max-width: 450px;
+    color: #392C1F;
+    margin: auto;
+}
+
+.container-custom3 {
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* 圖形驗證碼 */
+p.wrong {
+    display: none;
+}
+
+p.wrong.shake {
+    display: block;
+}
+
+p.wrong.shake {
+    animation: shake .4s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(1px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-2px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(2px, 0, 0);
+    }
+}
+
+/* 表單驗證 */
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
+    color: #C14646;
+}
+
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+}
+
+.has-error .form-control {
+    border-color: #C14646;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+
+/* ---------- 線上申辦 ---------- */
+#v-pills-bid #step2 {
+    display: none;
+}
+
+#v-pills-bid #step3 {
+    display: none;
+}
+
+#v-pills-bid #step4 {
+    display: none;
+}
+
+#v-pills-bid #step5 {
+    display: none;
+}
+
+#v-pills-bid .progress-bar {
+    background-color: #392C1F;
+}
+
+#v-pills-bid .progress {
+    background-color: #9B8668;
+}
+
+#v-pills-bid .status b {
+    width: 20%;
+    color: #392C1F;
+    font-weight: bold;
+}
+
+#v-pills-bid .status span {
+    width: 20%;
+    color: #9B8668;
+}
+
+#v-pills-bid .list_title {
+    align-items: center;
+}
+
+.checkbox:checked {
+    background: #392C1F;
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: solid 1px #dddddd;
+    border-radius: 5px;
+    position: relative;
+    top: 4px;
+    transition: background-color ease 0.1s;
+}
+
+.checkbox:checked::after {
+    content: '';
+    top: 4px;
+    left: 4px;
+    position: absolute;
+    border: #fff solid 2px;
+    border-top: none;
+    border-right: none;
+    height: 7px;
+    width: 10px;
+    transform: rotate(-45deg);
+}
+
+
+/* ---------- 查詢進度  ---------- */
+#v-pills-progress #step7 {
+    display: none;
+}
+
+#v-pills-progress #step7 .list {
+    background-color: #F3E5D0;
+    border: #392C1F solid 1px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 5px 0;
+    padding: 2rem 2rem 3rem 2rem;
+}
+
+#v-pills-progress .list_title b {
+    font-size: 1.2rem;
+}
+
+#v-pills-progress .list_title span {
+    font-size: 1.2rem;
+}
+
+.plan ul {
+    display: block;
+}
+
+.plan li {
+    width: 130px;
+    display: inline-block;
+    margin: 0 -4px;
+    text-align: center;
+    vertical-align: middle;
+    height: 70px;
+    position: relative;
+}
+
+.plan li div {
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: .9em;
+    letter-spacing: -1px;
+    color: #fff;
+    position: relative;
+}
+
+.plan li.done div {
+    background: #392C1F;
+}
+
+.plan li.now div {
+    background: #392C1F;
+    border: #C8B394 2px solid;
+    transform: scale(1.3);
+}
+
+.plan li.undone div {
+    background: #C8B394;
+    z-index: 500;
+}
+
+.plan li.done p {
+    font-size: .9em;
+    line-height: 1.3;
+    color: #392C1F;
+    margin-top: 5px;
+}
+
+.plan li.now p {
+    color: #392C1F;
+    font-weight: bold;
+    font-size: .9em;
+    line-height: 1.3;
+    margin-top: 5px;
+}
+
+.plan li.undone p {
+    font-size: .9em;
+    line-height: 1.3;
+    color: #C8B394;
+    margin-top: 5px;
+}
+
+.plan li div i {
+    z-index: 500;
+    position: relative;
+}
+
+.plan li:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 50px;
+    top: 59px;
+    z-index: 0;
+}
+
+.plan li.done:before {
+    background: #392C1F;
+}
+
+.plan li.undone:before, .plan li.now:before, .plan li.back:before {
+    background: #C8B394;
+}
+
+.plan li.back div {
+    background: #4D4D4D;
+}
+
+.plan li.final:before {
+    display: none;
+}
+
+@media screen and (max-width: 1600px) {
+    #v-pills-progress #step7 .list {
+        padding: 1rem 1rem 2rem 1rem;
+    }
+    .container-custom3 {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        height: 54px;
+    }
+    header img {
+        max-width: 400px;
+    }
+    .burger {
+        display: block;
+        width: 54px;
+        height: 54px;
+        position: absolute;
+        right: 0px;
+    }
+    .btn3 {
+        color: #C8B394;
+        background-color: #392C1F;
+    }
+    .btn3:hover {
+        border: #392C1F 2px solid;
+        color: #392C1F;
+        background-color: #C8B394;
+    }
+    .menu {
+        display: none;
+    }
+    .row .nav {
+        padding-top: unset;
+    }
+    .row .tab-content .img-responsive {
+        padding: 2rem 2rem 0rem 2rem;
+    }
+    .row .tab-content .container-custom4 {
+        padding: 2rem;
+    }
+    .container-custom1 {
+        max-width: 480px;
+    }
+    .container-custom3 {
+        max-width: 700px;
+    }
+    #v-pills-bid .status b {
+        font-size: 0.5rem;
+    }
+    #v-pills-bid .status span {
+        font-size: 0.25rem;
+    }
+    .footer {
+        padding: 0 5%;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-custom3 {
+        max-width: 450px;
+    }
+    .plan li {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        height: 40px;
+    }
+    header img {
+        max-width: 260px;
+    }
+    .burger {
+        width: 40px;
+        height: 40px;
+    }
+    .row .tab-content .img-responsive {
+        padding: 1rem 1rem 0rem 1rem;
+    }
+    .row .tab-content .container-custom4 {
+        padding: 1rem;
+    }
+    .container-custom1 {
+        max-width: 340px;
+    }
+    .container-custom2 {
+        max-width: 340px;
+    }
+    .container-custom3 {
+        max-width: 340px;
+    }
+    .plan li {
+        width: 70px;
+    }
+    .footer {
+        bottom: unset;
+        font-size: 13px;
+        padding: 10px 0;
+    }
+}
