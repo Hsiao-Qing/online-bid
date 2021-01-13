@@ -1,6 +1,6 @@
 //線上申辦下一步
 function gonext(i) {
-  var sz = new Array("step1", "step2", "step3", "step4", "step5");
+  var sz = new Array("step1", "step2", "step4", "step5");
   for (var j = 0; j < sz.length; j++) {
     if (i == sz[j]) {
       document.getElementById(i).style.display = "block";

@@ -247,13 +247,13 @@ p.wrong.shake {
 }
 
 #v-pills-bid .status b {
-    width: 20%;
+    width: 25%;
     color: #392C1F;
     font-weight: bold;
 }
 
 #v-pills-bid .status span {
-    width: 20%;
+    width: 25%;
     color: #9B8668;
 }
 
@@ -505,7 +505,8 @@ p.wrong.shake {
         max-width: 340px;
     }
     .container-custom3 {
-        max-width: 340px;
+        /* max-width: 340px; */
+        max-width: 400px;
     }
     .plan li {
         width: 70px;
